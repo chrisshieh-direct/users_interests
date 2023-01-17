@@ -1,0 +1,6 @@
+<h1>Users</h1>
+<ul>
+  <% @user_data.each do |name, values| %>
+    <li><a href="user/<%= name.downcase %>"><%= name.capitalize %></a></li>
+  <% end %>
+</ul>
